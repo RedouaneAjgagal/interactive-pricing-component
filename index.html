@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive pricing component</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon">
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap" rel="stylesheet">
+
+    <!-- Css -->
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <main>
+        <section>
+            <h1>Simple, traffic-based pricing</h1>
+            <p>Sign-up for our 30-day trial. No credit card required.</p>
+        </section>        
+        <article>
+            <div class="view-price">
+                <h2 id="views">100k pageviews</h2>
+                <div class="price">
+                    <h3 id="rangevalue">$16.00</h3><span class="month">/ month</span>
+                </div>
+                <div class="range">
+                    <input type="range" value="16" min="5" max="32" name="" id="range" aria-label="Select your plan">
+                </div>
+            </div>
+            <div class="mmyy">
+                <p>Monthly Billing</p>
+                <label class="switch">
+                    <input type="checkbox" name="" id="toggle" aria-label="price billing trigger">
+                    <span class="slider"></span>
+                </label>
+                <p>Yearly Billing</p>
+                <p class="discount">-25% Discount</p>
+                <p class="discount mobile">-25%</p>
+            </div>
+            <hr>
+            <div class="features-start">
+                <div class="features">
+                    <p><img src="./images/icon-check.svg" alt="" aria-hidden="true"> Unlimited websites</p>
+                    <p><img src="./images/icon-check.svg" alt="" aria-hidden="true"> 100% data ownership</p>
+                    <p><img src="./images/icon-check.svg" alt="" aria-hidden="true"> Email reports</p>
+                </div>
+                <div class="start">
+                    <a href="#" role="button" aria-label="Get your trial">Start my trial</a>
+                </div>
+            </div>
+        </article>
+        <div class="total">
+            <p id="total">Total: $16 / month</p><span class="saved hidden">$$$ Saved</span>
+        </div>
+    </main>
+    <script src="./main.js"></script>
+</body>
+</html>
